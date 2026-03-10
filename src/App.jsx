@@ -379,7 +379,7 @@ export default function VolunteerMatchSite() {
             <div className="rounded-2xl bg-slate-50 p-5">
               <div className="text-sm text-slate-500">Email</div>
               <div className="mt-2 text-lg font-bold text-slate-900">
-                hello@volunteermatch.app
+                volunteermatch1@gmail.com
               </div>
             </div>
             <div className="rounded-2xl bg-slate-50 p-5">
