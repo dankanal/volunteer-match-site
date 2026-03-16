@@ -68,25 +68,16 @@ export default function VolunteerMatchSite() {
             </div>
             <div>
               <div className="text-lg font-bold">Volunteer Match</div>
-              <div className="text-xs text-slate-500">
-                Помощь рядом, когда она нужна
-              </div>
+              <div className="text-xs text-slate-500">Помощь рядом, когда она нужна</div>
             </div>
           </div>
 
           <nav className="hidden items-center gap-6 text-sm text-slate-600 md:flex">
-            <a href="#features" className="transition hover:text-slate-900">
-              Возможности
-            </a>
-            <a href="#how" className="transition hover:text-slate-900">
-              Как работает
-            </a>
-            <a href="#about" className="transition hover:text-slate-900">
-              О проекте
-            </a>
-            <a href="#contacts" className="transition hover:text-slate-900">
-              Контакты
-            </a>
+            <a href="#features" className="transition hover:text-slate-900">Возможности</a>
+            <a href="#how" className="transition hover:text-slate-900">Как работает</a>
+            <a href="#download" className="transition hover:text-slate-900">Скачать</a>
+            <a href="#iphone" className="transition hover:text-slate-900">iPhone</a>
+            <a href="#contacts" className="transition hover:text-slate-900">Контакты</a>
           </nav>
 
           <a
@@ -138,8 +129,7 @@ export default function VolunteerMatchSite() {
             </div>
 
             <h1 className="max-w-xl text-4xl font-black leading-tight md:text-6xl">
-              Volunteer Match — помощь людям{" "}
-              <span className="text-lime-600">рядом с вами</span>
+              Volunteer Match — помощь людям <span className="text-lime-600">рядом с вами</span>
             </h1>
 
             <p className="mt-6 max-w-xl text-lg leading-8 text-slate-600">
@@ -153,28 +143,21 @@ export default function VolunteerMatchSite() {
                 download
                 className="rounded-2xl bg-lime-400 px-6 py-3 font-semibold text-slate-900 shadow-lg shadow-lime-200 transition hover:translate-y-[-1px]"
               >
-                Скачать приложение
+                Скачать Android APK
               </a>
               <a
-                href="#features"
+                href="#iphone"
                 className="rounded-2xl border border-slate-200 bg-white px-6 py-3 font-semibold text-slate-700 transition hover:bg-slate-50"
               >
-                Смотреть возможности
+                Открыть для iPhone
               </a>
             </div>
 
             <div className="mt-10 grid max-w-xl grid-cols-3 gap-4">
               {stats.map((item) => (
-                <div
-                  key={item.label}
-                  className="rounded-2xl border border-black/5 bg-white/70 p-4 shadow-sm backdrop-blur"
-                >
-                  <div className="text-xl font-black text-slate-900">
-                    {item.value}
-                  </div>
-                  <div className="mt-1 text-sm text-slate-500">
-                    {item.label}
-                  </div>
+                <div key={item.label} className="rounded-2xl border border-black/5 bg-white/70 p-4 shadow-sm backdrop-blur">
+                  <div className="text-xl font-black text-slate-900">{item.value}</div>
+                  <div className="mt-1 text-sm text-slate-500">{item.label}</div>
                 </div>
               ))}
             </div>
@@ -186,24 +169,14 @@ export default function VolunteerMatchSite() {
                 <div className="mb-4 rounded-2xl bg-white p-4 shadow-sm">
                   <div className="flex items-center justify-between">
                     <div>
-                      <div className="text-sm text-slate-500">
-                        Ближайшая заявка
-                      </div>
-                      <div className="mt-1 text-lg font-bold">
-                        Нужны продукты
-                      </div>
+                      <div className="text-sm text-slate-500">Ближайшая заявка</div>
+                      <div className="mt-1 text-lg font-bold">Нужны продукты</div>
                     </div>
-                    <span className="rounded-full bg-red-100 px-3 py-1 text-xs font-bold text-red-600">
-                      СРОЧНО
-                    </span>
+                    <span className="rounded-full bg-red-100 px-3 py-1 text-xs font-bold text-red-600">СРОЧНО</span>
                   </div>
                   <div className="mt-3 flex gap-2 text-xs text-slate-500">
-                    <span className="rounded-full bg-slate-100 px-3 py-1">
-                      📍 1.2 км
-                    </span>
-                    <span className="rounded-full bg-slate-100 px-3 py-1">
-                      ⏳ 2 часа
-                    </span>
+                    <span className="rounded-full bg-slate-100 px-3 py-1">📍 1.2 км</span>
+                    <span className="rounded-full bg-slate-100 px-3 py-1">⏳ 2 часа</span>
                   </div>
                 </div>
 
@@ -222,15 +195,11 @@ export default function VolunteerMatchSite() {
                 <div className="grid grid-cols-2 gap-3">
                   <div className="rounded-2xl bg-white p-4 shadow-sm">
                     <div className="text-2xl">⭐</div>
-                    <div className="mt-2 text-sm text-slate-500">
-                      Рейтинг и отзывы
-                    </div>
+                    <div className="mt-2 text-sm text-slate-500">Рейтинг и отзывы</div>
                   </div>
                   <div className="rounded-2xl bg-white p-4 shadow-sm">
                     <div className="text-2xl">🏅</div>
-                    <div className="mt-2 text-sm text-slate-500">
-                      Достижения и активность
-                    </div>
+                    <div className="mt-2 text-sm text-slate-500">Достижения и активность</div>
                   </div>
                 </div>
               </div>
@@ -241,25 +210,16 @@ export default function VolunteerMatchSite() {
 
       <section id="features" className="mx-auto max-w-7xl px-6 py-20">
         <div className="max-w-2xl">
-          <div className="text-sm font-semibold uppercase tracking-[0.2em] text-lime-700">
-            Возможности
-          </div>
-          <h2 className="mt-3 text-3xl font-black md:text-4xl">
-            Всё, что нужно для удобной помощи
-          </h2>
+          <div className="text-sm font-semibold uppercase tracking-[0.2em] text-lime-700">Возможности</div>
+          <h2 className="mt-3 text-3xl font-black md:text-4xl">Всё, что нужно для удобной помощи</h2>
         </div>
 
         <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
           {features.map((feature) => (
-            <div
-              key={feature.title}
-              className="rounded-3xl border border-black/5 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
-            >
+            <div key={feature.title} className="rounded-3xl border border-black/5 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
               <div className="text-3xl">{feature.icon}</div>
               <h3 className="mt-4 text-xl font-bold">{feature.title}</h3>
-              <p className="mt-3 text-sm leading-7 text-slate-600">
-                {feature.text}
-              </p>
+              <p className="mt-3 text-sm leading-7 text-slate-600">{feature.text}</p>
             </div>
           ))}
         </div>
@@ -268,29 +228,69 @@ export default function VolunteerMatchSite() {
       <section id="how" className="bg-slate-900 py-20 text-white">
         <div className="mx-auto max-w-7xl px-6">
           <div className="max-w-2xl">
-            <div className="text-sm font-semibold uppercase tracking-[0.2em] text-lime-300">
-              Как работает
-            </div>
-            <h2 className="mt-3 text-3xl font-black md:text-4xl">
-              Три простых шага
-            </h2>
+            <div className="text-sm font-semibold uppercase tracking-[0.2em] text-lime-300">Как работает</div>
+            <h2 className="mt-3 text-3xl font-black md:text-4xl">Три простых шага</h2>
           </div>
 
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             {steps.map((step) => (
-              <div
-                key={step.n}
-                className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm"
-              >
-                <div className="text-4xl font-black text-lime-300">
-                  {step.n}
-                </div>
+              <div key={step.n} className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm">
+                <div className="text-4xl font-black text-lime-300">{step.n}</div>
                 <h3 className="mt-4 text-xl font-bold">{step.title}</h3>
-                <p className="mt-3 text-sm leading-7 text-white/75">
-                  {step.text}
-                </p>
+                <p className="mt-3 text-sm leading-7 text-white/75">{step.text}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="download" className="mx-auto max-w-7xl px-6 py-20">
+        <div className="rounded-[2rem] bg-lime-400 p-8 shadow-xl shadow-lime-100 md:p-12">
+          <div className="grid gap-8 md:grid-cols-2 md:items-center">
+            <div>
+              <div className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-800/70">Android</div>
+              <h2 className="mt-3 text-3xl font-black text-slate-900 md:text-4xl">Скачать APK для Android</h2>
+              <p className="mt-4 max-w-xl text-slate-800/80">
+                Установите приложение на Android и пользуйтесь всеми функциями Volunteer Match.
+              </p>
+            </div>
+
+            <div className="flex flex-wrap gap-4 md:justify-end">
+              <a
+                href="/volunteer_match.apk"
+                download
+                className="rounded-2xl bg-slate-900 px-6 py-3 font-semibold text-white transition hover:translate-y-[-1px]"
+              >
+                Скачать APK
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="iphone" className="mx-auto max-w-7xl px-6 pb-20">
+        <div className="rounded-[2rem] border border-black/5 bg-white p-8 shadow-sm md:p-12">
+          <div className="grid gap-8 md:grid-cols-2 md:items-center">
+            <div>
+              <div className="text-sm font-semibold uppercase tracking-[0.2em] text-lime-700">iPhone</div>
+              <h2 className="mt-3 text-3xl font-black md:text-4xl">
+                Откройте Volunteer Match на iPhone
+              </h2>
+              <p className="mt-4 text-base leading-8 text-slate-600">
+                Для iPhone приложение сейчас доступно как веб-версия. Откройте сайт в Safari,
+                затем нажмите «Поделиться» и выберите «На экран Домой».
+              </p>
+            </div>
+
+            <div className="rounded-3xl bg-slate-50 p-6">
+              <div className="text-lg font-bold">Как установить на iPhone</div>
+              <ol className="mt-4 space-y-3 text-sm leading-7 text-slate-600">
+                <li>1. Откройте сайт в Safari</li>
+                <li>2. Нажмите кнопку «Поделиться»</li>
+                <li>3. Выберите «На экран Домой»</li>
+                <li>4. Откройте Volunteer Match как приложение</li>
+              </ol>
+            </div>
           </div>
         </div>
       </section>
@@ -298,12 +298,8 @@ export default function VolunteerMatchSite() {
       <section id="about" className="mx-auto max-w-7xl px-6 py-20">
         <div className="grid gap-10 md:grid-cols-2 md:items-center">
           <div>
-            <div className="text-sm font-semibold uppercase tracking-[0.2em] text-lime-700">
-              О проекте
-            </div>
-            <h2 className="mt-3 text-3xl font-black md:text-4xl">
-              Сервис, который соединяет тех, кому нужна помощь, и тех, кто готов помочь
-            </h2>
+            <div className="text-sm font-semibold uppercase tracking-[0.2em] text-lime-700">О проекте</div>
+            <h2 className="mt-3 text-3xl font-black md:text-4xl">Сервис, который соединяет тех, кому нужна помощь, и тех, кто готов помочь</h2>
             <p className="mt-6 text-base leading-8 text-slate-600">
               Volunteer Match создан как удобное мобильное решение для волонтёрской помощи.
               Здесь можно быстро разместить запрос, откликнуться, пообщаться в чате и безопасно
@@ -325,50 +321,11 @@ export default function VolunteerMatchSite() {
         </div>
       </section>
 
-      <section id="download" className="mx-auto max-w-7xl px-6 pb-20">
-        <div className="rounded-[2rem] bg-lime-400 p-8 shadow-xl shadow-lime-100 md:p-12">
-          <div className="grid gap-8 md:grid-cols-2 md:items-center">
-            <div>
-              <div className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-800/70">
-                Скачать
-              </div>
-              <h2 className="mt-3 text-3xl font-black text-slate-900 md:text-4xl">
-                Попробуйте Volunteer Match уже сейчас
-              </h2>
-              <p className="mt-4 max-w-xl text-slate-800/80">
-                Установите приложение, создавайте заявки, помогайте людям рядом и стройте настоящее
-                волонтёрское сообщество.
-              </p>
-            </div>
-
-            <div className="flex flex-wrap gap-4 md:justify-end">
-              <a
-                href="/volunteer_match.apk"
-                download
-                className="rounded-2xl bg-slate-900 px-6 py-3 font-semibold text-white transition hover:translate-y-[-1px]"
-              >
-                Скачать APK
-              </a>
-              <a
-                href="#contacts"
-                className="rounded-2xl border border-slate-900/10 bg-white px-6 py-3 font-semibold text-slate-900 transition hover:bg-slate-50"
-              >
-                Связаться
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section id="contacts" className="mx-auto max-w-7xl px-6 pb-20">
         <div className="rounded-[2rem] border border-black/5 bg-white p-8 shadow-sm md:p-10">
           <div className="max-w-2xl">
-            <div className="text-sm font-semibold uppercase tracking-[0.2em] text-lime-700">
-              Контакты
-            </div>
-            <h2 className="mt-3 text-3xl font-black md:text-4xl">
-              Есть вопросы или предложения?
-            </h2>
+            <div className="text-sm font-semibold uppercase tracking-[0.2em] text-lime-700">Контакты</div>
+            <h2 className="mt-3 text-3xl font-black md:text-4xl">Есть вопросы или предложения?</h2>
             <p className="mt-4 text-base leading-8 text-slate-600">
               Напишите нам, если хотите узнать больше о проекте, предложить сотрудничество или
               поделиться идеями по развитию Volunteer Match.
@@ -378,15 +335,11 @@ export default function VolunteerMatchSite() {
           <div className="mt-8 grid gap-4 md:grid-cols-2">
             <div className="rounded-2xl bg-slate-50 p-5">
               <div className="text-sm text-slate-500">Email</div>
-              <div className="mt-2 text-lg font-bold text-slate-900">
-                volunteermatch1@gmail.com
-              </div>
+              <div className="mt-2 text-lg font-bold text-slate-900">hello@volunteermatch.app</div>
             </div>
             <div className="rounded-2xl bg-slate-50 p-5">
               <div className="text-sm text-slate-500">Поддержка</div>
-              <div className="mt-2 text-lg font-bold text-slate-900">
-                Ответим на ваши вопросы и предложения
-              </div>
+              <div className="mt-2 text-lg font-bold text-slate-900">Ответим на ваши вопросы и предложения</div>
             </div>
           </div>
         </div>
